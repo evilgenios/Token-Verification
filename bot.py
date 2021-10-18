@@ -150,4 +150,4 @@ async def register(ctx, Token=None, Nickname=None):
             return
 
 
-bot.run('ODg2OTM5MTc4MzgwNjg5NDA4.YT84eg.0eiXwvAC10rAPrQHEDfBItQlxbg')
+bot.run('Token Here')
