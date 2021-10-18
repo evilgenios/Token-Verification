@@ -92,7 +92,7 @@ async def createtoken(ctx, planDays=0):
                 color= discord.Color.dark_theme()
             )
             embed.add_field(name="Token Status: Created <:white_check_mark:886940376127131689>", value=f"Token: `{o}`")
-            embed.set_footer(text="Verification", icon_url="https://cdn.discordapp.com/attachments/890153097228349450/890170780363669594/image1-9.png")
+            embed.set_footer(text="Verification", icon_url="")
             await ctx.send(embed=embed)
 
 
@@ -140,12 +140,12 @@ async def register(ctx, Token=None, Nickname=None):
             if reg == False:
                 embed = discord.Embed(title=f"ERROR", color=discord.Color.dark_theme())
                 embed.add_field(name="Register Fail", value=f"Invalid Token", inline=False)
-                embed.set_footer(text="Verification", icon_url="https://cdn.discordapp.com/attachments/890153097228349450/890170780363669594/image1-9.png")
+                embed.set_footer(text="Verification", icon_url="")
                 await ctx.send(embed=embed)  
                 return
         else:
             embed.add_field(name="$Register <token> <nickname>", value=f"Invalid Token/missing nickname", inline=False)
-            embed.set_footer(text="Verification", icon_url="https://cdn.discordapp.com/attachments/890153097228349450/890170780363669594/image1-9.png")
+            embed.set_footer(text="Verification", icon_url="")
             await ctx.send(embed=embed) 
             return
 
